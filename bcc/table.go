@@ -23,9 +23,8 @@ import (
 )
 
 /*
-#cgo CFLAGS: -I/usr/include/bcc/compat
-#cgo LDFLAGS: -lbcc
-#include <bcc/bcc_common.h>
+#cgo pkg-config: libbcc
+#include <bcc/bpf_common.h>
 #include <bcc/libbpf.h>
 */
 import "C"
